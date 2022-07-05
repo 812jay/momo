@@ -11,8 +11,8 @@ class FolderListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // drawer: const NavBar(),
-      appBar: commonAppBar(context),
+      endDrawer: const NavBar(),
+      appBar: commonAppBar(context: context, isLeading: true),
       floatingActionButton: floatingActionButtonAdd(
         icon: const Icon(
           Icons.folder,

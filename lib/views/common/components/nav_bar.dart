@@ -121,28 +121,20 @@ class NavBar extends StatelessWidget {
               ),
             ),
           ),
-          // Container(
-          //   padding:
-          //       const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-          //   child: Row(
-          //     children: const [
-          //       Icon(Icons.account_box),
-          //       SizedBox(width: 10),
-          //       Text('나의 정보'),
-          //     ],
-          //   ),
-          // ),
-          // Container(
-          //   padding:
-          //       const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-          //   child: Row(
-          //     children: const [
-          //       Icon(Icons.settings),
-          //       SizedBox(width: 10),
-          //       Text('설정'),
-          //     ],
-          //   ),
-          // ),
+          GestureDetector(
+            onTap: () => Navigator.of(context).pushNamed('/setting'),
+            child: Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+              child: Row(
+                children: const [
+                  Icon(Icons.settings),
+                  SizedBox(width: 10),
+                  Text('설정'),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

@@ -11,8 +11,8 @@ class MemoPost extends StatelessWidget {
   Widget build(BuildContext context) {
     final HtmlEditorController htmlEditorController = HtmlEditorController();
     return Scaffold(
-      // drawer: const NavBar(),
-      appBar: commonAppBar(context),
+      endDrawer: const NavBar(),
+      appBar: commonAppBar(context: context, isLeading: true),
       bottomNavigationBar: GestureDetector(
         onTap: () {
           Navigator.of(context).pop();

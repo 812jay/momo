@@ -11,8 +11,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const NavBar(),
-      appBar: commonAppBar(context),
+      endDrawer: const NavBar(),
+      appBar: commonAppBar(context: context, isLeading: false),
       floatingActionButton: floatingActionButtonAdd(
         icon: const Icon(
           Icons.note,

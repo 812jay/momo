@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-PreferredSizeWidget commonAppBar(BuildContext context) {
+PreferredSizeWidget commonAppBar(
+    {required BuildContext context, required bool isLeading}) {
   return AppBar(
     iconTheme: const IconThemeData(color: Colors.black),
+    leading: isLeading
+        ? GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: const Icon(Icons.arrow_back_ios),
+          )
+        : null,
     title: GestureDetector(
       onTap: () => Navigator.of(context).pushNamed('/home'),
       child: const Text(
@@ -13,17 +20,6 @@ PreferredSizeWidget commonAppBar(BuildContext context) {
       ),
     ),
     centerTitle: true,
-    actions: [
-      Padding(
-        padding: const EdgeInsets.only(right: 12.0),
-        child: GestureDetector(
-          onTap: () {
-            Navigator.of(context).pushNamed('/setting');
-          },
-          child: const Icon(Icons.settings),
-        ),
-      )
-    ],
     titleTextStyle: const TextStyle(color: Colors.black),
     backgroundColor: Theme.of(context).scaffoldBackgroundColor,
     elevation: 0,

@@ -9,8 +9,8 @@ class SettingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const NavBar(),
-      appBar: commonAppBar(context),
+      endDrawer: const NavBar(),
+      appBar: commonAppBar(context: context, isLeading: true),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 30.0),
         child: ListView(
