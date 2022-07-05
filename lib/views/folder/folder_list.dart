@@ -4,6 +4,8 @@ import 'package:momo/views/common/components/floating_action_button_add.dart';
 import 'package:momo/views/common/components/nav_bar.dart';
 import 'package:momo/views/folder/components/folder_block.dart';
 
+import 'components/folder_post_dialog.dart';
+
 class FolderListView extends StatelessWidget {
   static const routeName = '/folder';
   const FolderListView({Key? key}) : super(key: key);
@@ -14,11 +16,11 @@ class FolderListView extends StatelessWidget {
       endDrawer: const NavBar(),
       appBar: commonAppBar(context: context, isLeading: true),
       floatingActionButton: floatingActionButtonAdd(
+        onTap: () => showFolderPostDialog(context: context),
         icon: const Icon(
           Icons.folder,
           color: Colors.white,
         ),
-        onTap: () {},
       ),
       body: SafeArea(
         child: Container(
