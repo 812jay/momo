@@ -3,12 +3,10 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 
 class FriendBlock extends StatelessWidget {
   final String nickname;
-  final String email;
   final String intro;
   const FriendBlock({
     Key? key,
     required this.nickname,
-    required this.email,
     required this.intro,
   }) : super(key: key);
 
@@ -89,8 +87,6 @@ class FriendBlock extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 5.0),
-                    Text(email),
                     const SizedBox(height: 5.0),
                     Text(intro),
                   ],

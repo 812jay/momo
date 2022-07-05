@@ -3,6 +3,7 @@ import 'package:momo/views/common/components/common_app_bar.dart';
 import 'package:momo/views/common/components/floating_action_button_add.dart';
 import 'package:momo/views/common/components/nav_bar.dart';
 import 'package:momo/views/friend/components/friend_block.dart';
+import 'package:momo/views/friend/components/friend_search_dialog.dart';
 
 class FriendListView extends StatelessWidget {
   static const routeName = '/friend';
@@ -18,7 +19,7 @@ class FriendListView extends StatelessWidget {
           Icons.people,
           color: Colors.white,
         ),
-        onTap: () {},
+        onTap: () => showFriendSearchDialog(context: context),
       ),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 30.0),
@@ -38,17 +39,14 @@ class FriendListView extends StatelessWidget {
                 child: ListView(
                   children: const [
                     FriendBlock(
-                      email: 'email',
                       intro: 'intro',
                       nickname: 'nickname',
                     ),
                     FriendBlock(
-                      email: 'email',
                       intro: 'intro',
                       nickname: 'nickname',
                     ),
                     FriendBlock(
-                      email: 'email',
                       intro: 'intro',
                       nickname: 'nickname',
                     ),
