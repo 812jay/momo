@@ -23,6 +23,25 @@ class FriendBlock extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Slidable(
+          startActionPane: const ActionPane(
+            motion: ScrollMotion(),
+            extentRatio: 0.2,
+            children: [
+              SlidableAction(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10.0),
+                  bottomLeft: Radius.circular(10.0),
+                ),
+                padding: EdgeInsets.only(top: 10.0),
+                onPressed: null,
+                label: '수정',
+                icon: Icons.edit,
+                foregroundColor: Colors.white,
+                // ignore: use_full_hex_values_for_flutter_colors
+                backgroundColor: Color(0xff966bfbf),
+              )
+            ],
+          ),
           endActionPane: const ActionPane(
             motion: ScrollMotion(),
             extentRatio: 0.2,
