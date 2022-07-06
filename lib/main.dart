@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:momo/providers/auth_provider.dart';
 import 'package:momo/views/auth/sign_in.dart';
+import 'package:momo/views/auth/sign_up.dart';
 import 'package:momo/views/folder/folder_list.dart';
 import 'package:momo/views/friend/friend_list.dart';
 import 'package:momo/views/home/home.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
           SplashView.routeName: (context) => const SplashView(),
           Home.routeName: (context) => const Home(),
           SignInView.routeName: (context) => const SignInView(),
+          SignUpView.routeName: (context) => const SignUpView(),
           FolderListView.routeName: (context) => const FolderListView(),
           MemoListView.routeName: (context) => const MemoListView(),
           FriendListView.routeName: (context) => const FriendListView(),

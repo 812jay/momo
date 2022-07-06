@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SignInView extends StatelessWidget {
-  static const routeName = '/signIn';
+  static const routeName = '/sign_in';
   const SignInView({Key? key}) : super(key: key);
 
   @override
@@ -37,9 +37,9 @@ class SignInView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () => Navigator.of(context).pushNamed('sign_up'),
                       child: const Text(
-                        'Sign In',
+                        'Sign Up',
                         style: TextStyle(
                           color: Colors.black,
                         ),
