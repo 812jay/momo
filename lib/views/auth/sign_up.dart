@@ -38,6 +38,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '이메일을 입력해주세요.'),
+                    keyboardType: TextInputType.emailAddress,
                   ),
                   const SizedBox(height: 40.0),
                   const Text(
@@ -46,6 +47,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '닉네임을 입력해주세요.'),
+                    keyboardType: TextInputType.name,
                   ),
                   const SizedBox(height: 40.0),
                   const Text(
@@ -54,6 +56,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '휴대폰번호를 입력해주세요.'),
+                    keyboardType: TextInputType.phone,
                   ),
                   const SizedBox(height: 40.0),
                   const Text(
@@ -62,6 +65,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '한줄인사를 입력해주세요.'),
+                    keyboardType: TextInputType.text,
                   ),
                   const SizedBox(height: 40.0),
                   const Text(
@@ -70,6 +74,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '비밀번호를 입력해주세요.'),
+                    keyboardType: TextInputType.visiblePassword,
                   ),
                   const SizedBox(height: 40.0),
                   const Text(
@@ -78,6 +83,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   const TextField(
                     decoration: InputDecoration(hintText: '비밀번호 확인을 입력해주세요.'),
+                    keyboardType: TextInputType.visiblePassword,
                   ),
                 ],
               ),
