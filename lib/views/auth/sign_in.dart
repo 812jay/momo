@@ -46,7 +46,8 @@ class SignInView extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () =>
+                          Navigator.of(context).pushNamed('find_password'),
                       child: const Text(
                         'Find Password',
                         style: TextStyle(
