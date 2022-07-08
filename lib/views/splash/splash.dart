@@ -13,7 +13,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2)).then(
-      (value) => Navigator.of(context).pushReplacementNamed('/sign_in'),
+      (value) => Navigator.of(context).pushReplacementNamed('/home'),
     );
   }
 
